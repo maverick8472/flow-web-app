@@ -1,0 +1,14 @@
+{
+  "name": "flow_web",
+  "version": "1.0.0",
+  "description": "Flow habit tracker web app ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Maverick",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

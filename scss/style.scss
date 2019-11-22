@@ -1,6 +1,22 @@
 
-$color: red;
+// **************
+// Utilities
+// **************
+@import "utilities/config";
 
-body {
-    background: $color;
-}
+
+// **************
+// Stylesheet
+// *************
+@import "header_3";
+@import "footer";
+@import "main";
+
+
+// **************
+// Media
+// *************
+@import "utilities/bars";
+@import "utilities/media";
+
+

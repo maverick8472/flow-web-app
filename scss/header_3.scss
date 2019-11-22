@@ -1,0 +1,56 @@
+#header{
+    .container{
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background: $main-color;
+            padding: 5px 20px;
+            
+
+            li{
+                font-size: 16px;
+                padding: 10px 5px;
+            }
+
+            .logo {
+                color: $light-color;
+                letter-spacing: 5px;
+                font-size: 20px;
+                flex: 1;
+            }
+
+            .item {
+                order: 1;
+                background: $main-color;
+                
+
+
+                a{
+                    color: $light-color;
+
+                    &:hover {
+                        color: $dark-color;
+                        transition: all 0.3s ease;
+                    }
+                }
+
+                
+            }
+        
+            .item.button {
+                order: 2;
+            }
+        
+            .toggle {
+                order: 3;
+                display: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+

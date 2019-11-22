@@ -1,0 +1,96 @@
+
+
+#header {
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: $main-color;
+        height: 60px;
+
+
+        .logo{
+            color: $light-color;
+            letter-spacing: 5px;
+        }
+
+        .menu {
+            display: flex;
+            // justify-content: space-around;
+            padding: 0.8rem 0.8rem;
+
+            .item {
+                display: block;
+                width: auto;
+                order: 1;
+            }
+
+            .button {
+                order: 2;
+            }
+            .toggle {
+                display: none;
+            }
+
+            li {
+                padding: 15px 5px;
+                white-space: nowrap;
+            }
+
+            a {
+                color: $light-color;
+                flex-wrap: wrap;
+
+                &:hover {
+                    color: $dark-color;
+                    transition: all 0.3s ease;
+                }
+            }
+
+            .button {
+                // padding: 1.5rem 1rem;
+                // border: 3px solid black;
+                // border-radius: 5px;
+                // transition: all 1s linear;
+                // margin-left: 1rem;
+
+                .primary {
+                    // background: $dark-color;
+                    // color: $light-color;
+                }
+
+                .secondary{
+                    // color: $dark-color;
+                }
+            }
+           
+        }
+        // .nav-links {
+
+        //     .menu {
+        //         display: flex;
+                
+        //     }
+    
+        //     li {
+        //         padding: 0.8rem 0.8rem;
+        //     }
+    
+        //     a {
+        //         color: $light-color;
+        //     }
+        // }
+
+        .burger {
+            display: none;
+
+            div {
+                width: 25px;
+                height: 3px;
+                background: $light-color;
+                margin: 5px;
+            }
+        }
+    
+    }
+}

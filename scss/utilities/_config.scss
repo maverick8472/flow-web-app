@@ -1,0 +1,67 @@
+
+$dark-color: #16476d;
+$main-color: #4d7299;
+$medium-color: #7fa0c8;
+$light-color: #b2d1f9;
+$bg-image: url('../img/flow_main.jpeg');
+$fonts: 'Roboto', sans-serif;
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fonts;
+}
+
+a {
+    text-decoration: none;
+    // color: $dark-color;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+// Padding
+.py {
+    &-1 {
+        padding: 1rem 0;
+    }
+    &-2 {
+        padding: 2rem 0;
+    }
+    &-3 {
+        padding: 3rem 0;
+    }
+    &-4 {
+        padding: 4rem 0;
+    }
+}
+
+
+// Margin
+
+.my {
+    &-1 {
+        margin: 1rem 0;
+    }
+    &-2 {
+        margin: 2rem 0;
+    }
+    &-3 {
+        margin: 3rem 0;
+    }
+    &-4 {
+        margin: 4rem 0;
+    }
+}

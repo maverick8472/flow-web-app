@@ -6,12 +6,11 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            background: $main-color;
+            background: $dark-color;
             padding: 5px 20px;
-            
-
+    
             li{
-                font-size: 16px;
+                font-size: 1.25rem;;
                 padding: 10px 5px;
             }
 
@@ -24,7 +23,7 @@
 
             .item {
                 order: 1;
-                background: $main-color;
+                background: $dark-color;
                 
 
 
@@ -32,7 +31,7 @@
                     color: $light-color;
 
                     &:hover {
-                        color: $dark-color;
+                        color: $medium-color;
                         transition: all 0.3s ease;
                     }
                 }

@@ -1,0 +1,122 @@
+
+
+#footer {
+    .container {
+        background: $main-color;
+        
+        .ft-main {
+
+            display: flex;
+            color: $light-color;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 1.25rem;
+    
+            .ft-main-item {
+                min-width: 12.5rem;
+
+                .ft-title {
+                    color: $dark-color;
+                }
+
+                li{
+                    margin: 0.5rem 0;
+                    font-size: 1.25rem;
+        
+                    a {
+                        color: $light-color;
+        
+                        &:hover {
+                            color: $dark-color;
+                            transition: all 0.3s ease;
+                        }
+                    }
+                }
+
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                input[type="email"] {
+                    border: 0;
+                    padding: 0.625rem;
+                    margin-top: 0.3125rem;
+                }
+                input[type="submit"] {
+                    background-color: #00d188;
+                    color: #fff;
+                    cursor: pointer;
+                    border: 0;
+                    padding: 0.625rem 0.9375rem;
+                    margin-top: 0.3125rem;
+                }
+        
+            }
+            
+
+        }
+    
+        .ft-social {
+            
+            padding: 0 1.875rem 1.25rem;
+            .ft-social-list{
+                padding-top: 1.25rem;
+                display: flex;
+                justify-content: center;
+                border-top: 1px $medium-color solid;
+    
+                li{
+                    margin: 0.5rem;
+                    font-size: 1.25rem;
+    
+                    a {
+                        color: $light-color;
+    
+                        &:hover {
+                            color: $dark-color;
+                            transition: all 0.3s ease;
+                        }
+                    }
+    
+    
+                }
+            }
+        }
+    
+        .ft-legal {
+            background: $dark-color;
+            
+            .ft-legal-list {
+                padding: 0.9375rem 1.875rem;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                li{
+                    margin: 0.125rem 0.625rem;
+                    font-size: 1.25rem;
+                    color: $light-color;
+                    a {
+                        color: $light-color;
+        
+                        &:hover {
+                            color: $medium-color;
+                            transition: all 0.3s ease;
+                        }
+                    }
+        
+        
+                }
+
+                li:nth-last-child(2) {
+                    flex: 1;
+                }
+               
+            }
+        
+    }
+
+   
+        
+    }
+}

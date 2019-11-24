@@ -13,13 +13,25 @@
                     display: none;
                     width: 100%;
                     text-align: center;
+                    background: $medium-color;
+
+                    a{
+                        color: $dark-color;
+    
+                        &:hover {
+                            color: $light-color;
+                            transition: all 0.3s ease;
+                        }
+                    }
                     
                 }
+
         
                 .item.button{
                     width: auto;
                     order: 1;
                     display: block;
+                    background: $dark-color;
 
                    
                     a{
@@ -68,6 +80,7 @@
                     width: 100%;
                     order: 2;
                     display: none;
+                    background: $medium-color;
                     
                     a{
                         background: none;

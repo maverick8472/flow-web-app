@@ -6,37 +6,34 @@
     #header {
         .container{
         
-            .menu{ 
-                
-                .item {
-                    order: 3;
-                    display: none;
-                    width: 100%;
-                    text-align: center;
-                    
-                }
-        
-                .item.button{
-                    width: auto;
-                    order: 1;
-                    display: block;
-
-                   
-                    a{
-                        padding: 7px 15px;
-                        background: teal;
-                        border: 1px solid #006d6d;
-                        border-radius: 50em;
-
-                        &:hover {
-                        
-                            border-radius: 50em;
-                            background: #006d6d;
-                            border-color: #005959;
-                        }
+            .hd-menu{  
+                    .item {
+                        order: 3;
+                        display: none;
+                        width: 100%;
+                        text-align: center;  
                     }
+        
+                    .item.button{
+                        width: auto;
+                        order: 1;
+                        display: block;
 
-                }
+                        a{
+                            padding: 7px 15px;
+                            background: teal;
+                            border: 1px solid #006d6d;
+                            border-radius: 50em;
+
+                            &:hover {
+                            
+                                border-radius: 50em;
+                                background: #006d6d;
+                                border-color: #005959;
+                            }
+                        }
+
+                    }
 
                 .item.button.secondary a{
                         background: none;
@@ -62,8 +59,7 @@
 
     #header {
         .container {
-            .menu {
-
+            .hd-menu {
                 .item.button {
                     width: 100%;
                     order: 2;
@@ -93,6 +89,27 @@
                 }
             }
         }
+    }
+
+    #footer {
+        .container {
+            .ft-main {
+                .ft-main-item {
+                    form {
+                        // Reset border radius to default 
+                        input[type="email"] { 
+                            border-radius: 0;
+                        }
+                        input[type="submit"] {
+                            border-radius: 0;
+                        }
+                    }
+                }
+    
+                
+            }
+        }
+        
     }
     
 }

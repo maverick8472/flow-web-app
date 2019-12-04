@@ -1,0 +1,97 @@
+
+
+#back2Top {
+        width: 40px;
+        line-height: 40px;
+        overflow: hidden;
+        z-index: 999;
+        display: none;
+        cursor: pointer;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        text-align: center;
+        font-size: 30px;
+        text-decoration: none;
+        background: teal;
+        border: 1px solid #006d6d;
+
+        &:hover {
+            background: #006d6d;
+            border-color: #005959;
+        }
+}
+
+.arrow-up {
+    height: 40px;
+    width: 40px;
+    display: block;
+    border: 1px solid #666;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    .left-arm {
+        position: absolute;
+        z-index: 1;
+        background-color: transparent;
+        top: 19px;
+        left: 3px;
+        width: 20px;
+        display: block;
+        transform: rotate(-45deg);
+        border-radius: 2px;
+    
+        &:after {
+          content: "";
+          background-color: $light-color;
+          width: 20px;
+          height: 1px;
+          display: block;
+          border-radius: 1px;
+          transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+          transform-origin: right center;
+          z-index: -1;
+        }
+    }
+
+    .right-arm {
+        position: absolute;
+        z-index: 1;
+        background-color: transparent;
+        top: 19px;
+        left: 17px;
+        width: 20px;
+        display: block;
+        transform: rotate(45deg);
+        border-radius: 2px;
+        &:after {
+          content: "";
+          background-color: $light-color;
+          width: 20px;
+          height: 1px;
+          display: block;
+          border-radius: 1px;
+          transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+          transform-origin: left center;
+          z-index: -1;
+        }
+    }
+
+    &:hover{
+        transition: all 0.3s;
+        border-radius: 50%;
+
+        .left-arm:after {
+          transform: rotate(-10deg);
+        }
+        .right-arm:after {
+          transform: rotate(10deg);
+        }
+    }
+}
+  
+  
+  
+  
+  

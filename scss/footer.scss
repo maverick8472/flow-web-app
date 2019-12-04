@@ -32,24 +32,47 @@
                         }
                     }
                 }
+                p {
+                    margin: 0.2rem 0;
+                    font-size: 1rem;
+                }
 
                 form {
                     display: flex;
                     flex-wrap: wrap;
+                    margin: 0.5rem 0;
+                    
+
+                    input[type="email"] {
+                        border: 0;
+                        padding: 0.625rem;
+                        margin-top: 0.3125rem;
+                        border-top-left-radius: 50em;
+                        border-bottom-left-radius: 50em;
+                        font-size: 1rem;
+                        border: 1px solid #006d6d;
+                    }
+                    input[type="submit"] {
+                        background-color: $dark-color;
+                        color: $light-color;
+                        cursor: pointer;
+                        border: 0;
+                        padding: 0.625rem 0.9375rem;
+                        margin-top: 0.3125rem;
+                        border-top-right-radius: 50em;
+                        border-bottom-right-radius: 50em;
+                        font-size: 1rem;
+                        background: teal;
+                        border: 1px solid #006d6d;
+
+                        &:hover {
+                            transition: all 0.3s ease;
+                            background: #006d6d;
+                            border-color: #005959;
+                        }
+                    }
                 }
-                input[type="email"] {
-                    border: 0;
-                    padding: 0.625rem;
-                    margin-top: 0.3125rem;
-                }
-                input[type="submit"] {
-                    background-color: #00d188;
-                    color: #fff;
-                    cursor: pointer;
-                    border: 0;
-                    padding: 0.625rem 0.9375rem;
-                    margin-top: 0.3125rem;
-                }
+                
         
             }
             
@@ -104,8 +127,6 @@
                             transition: all 0.3s ease;
                         }
                     }
-        
-        
                 }
 
                 li:nth-last-child(2) {

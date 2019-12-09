@@ -1,0 +1,31 @@
+
+// Toggle Button
+.bars{
+    background: $medium-color;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+    top: -5px;
+
+    &:before {
+        background: $medium-color;
+        content: "";
+        height: 2px;
+        display: inline-block;
+        position: absolute;
+        width: 18px;
+        top: 5px;
+    }
+
+    &:after {
+        background: $medium-color;
+        content: "";
+        height: 2px;
+        display: inline-block;
+        position: absolute;
+        width: 18px;
+        top: -5px;
+    }
+}
+//  End of Toggle Button

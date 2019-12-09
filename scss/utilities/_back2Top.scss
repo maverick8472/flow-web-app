@@ -1,25 +1,26 @@
 
 
 #back2Top {
-        width: 40px;
-        line-height: 40px;
-        overflow: hidden;
-        z-index: 999;
-        display: none;
-        cursor: pointer;
-        position: fixed;
-        bottom: 50px;
-        right: 20px;
-        text-align: center;
-        font-size: 30px;
-        text-decoration: none;
-        background: teal;
-        border: 1px solid #006d6d;
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  background: teal;
+  border: 1px solid #006d6d;
 
-        &:hover {
-            background: #006d6d;
-            border-color: #005959;
-        }
+  &:hover {
+      background: #006d6d;
+      border-color: #005959;
+  }
+  
 }
 
 .arrow-up {

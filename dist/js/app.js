@@ -5,14 +5,16 @@ $(function() {
     $(".toggle").on("click", function() {
         if ($(".item").hasClass("active")) {
             $(".item").removeClass("active");
-            $(this).find("a").html("<i class='fas fa-bars'></i>");
+            // $(".item").removeClass("active").slideDown(300);
+            // $(this).find("a").html("<i class='fas fa-bars'></i>");
         } else {
             $(".item").addClass("active");
-            $(this).find("a").html("<i class='fas fa-times'></i>");
+            // $(".item").addClass("active").slideUp(300);
+            // $(this).find("a").html("<i class='fas fa-times'></i>");
         }
     });
 });
-
+//  end of toggle button
 
 /*Scroll to top when arrow up clicked BEGIN*/
 $(window).scroll(function() {
@@ -35,3 +37,12 @@ $(document).ready(function() {
 
 
 
+// toggle button
+ var btn = $('.btn');
+
+ btn.on('click', function() {
+   $(this).toggleClass('active');
+   $(this).toggleClass('not-active');
+ });
+
+//  end of toggle button

@@ -11,7 +11,7 @@
                         order: 3;
                         display: none;
                         width: 100%;
-                        text-align: center;  
+                        text-align: center;
                     }
         
                     .item.button{
@@ -24,7 +24,7 @@
                             background: teal;
                             border: 1px solid #006d6d;
                             border-radius: 50em;
-
+                    
                             &:hover {
                             
                                 border-radius: 50em;
@@ -42,10 +42,11 @@
                 .toggle {
                     order: 2;
                     display: block;
+                    
                 }
-        
+
                 .item.active{
-                    display: block;
+                    transition: all 0.3s;              
                 }
 
             }

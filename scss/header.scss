@@ -1,55 +1,60 @@
 #header{
     .container{
-        
-        .hd-menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background: $dark-color;
-            padding: 0.3125rem 1.25rem;
-            
-    
-            li{
-                font-size: 1.25rem;;
-                padding: 0.625rem 0.3125rem;
-            }
+        nav{
+            position: fixed;
+            top: 0;
+            width: 100%;
 
-            .logo {
-                color: $light-color;
-                letter-spacing: 0.3125rem;
-                font-size: 1.25rem;
-                flex: 1;
-            }
 
-            .item {
-                order: 1;
+            .hd-menu {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
                 background: $dark-color;
-                
-                a{
-                    color: $light-color;
-
-                    &:hover {
-                        color: $medium-color;
-                        transition: all 0.3s ease;
-                    }
+                padding: 0.3125rem 1.25rem;
+     
+                li{
+                    font-size: 1.25rem;
+                    padding: 0.625rem 0.3125rem;
                 }
- 
-            }
-        
-            .item.button {
-                order: 2;
-            }
-        
-            .toggle {
-                order: 3;
-                display: none;
-                cursor: pointer;
-            }
-
-
+    
+                .logo {
+                    color: $light-color;
+                    letter-spacing: 0.3125rem;
+                    font-size: 1.25rem;
+                    flex: 1;
+                }
+    
+                .item {
+                    order: 1;
+                    background: $dark-color;     
+                    a{
+                        color: $light-color;
+    
+                        &:hover {
+                            color: $medium-color;
+                            transition: all 0.3s ease;
+                        }
+                    }
+     
+                }
             
+                .item.button {
+                    order: 2;
+                }
+            
+                .toggle {
+                    order: 3;
+                    display: none;
+                    cursor: pointer;
+                }
+    
+    
+                
+            }
         }
+        
     }
 }
 

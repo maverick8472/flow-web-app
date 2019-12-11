@@ -7,14 +7,8 @@
         .container{
         
             nav{
-                position: fixed;
-                top: 0;
-                width: 100%;
+                
             .hd-menu{  
-                // max-height:100%;
-                //         transition: all 0.3s ease;
-                        // max-height: 64px;
-                        
                     .item {
                         order: 3;
                         display: none;
@@ -61,6 +55,8 @@
 
             }
         }
+
+        
     }
     }
     
@@ -72,9 +68,9 @@
     #header {
         .container {
             nav{
-                position: fixed;
-                top: 0;
-                width: 100%;
+                // position: fixed;
+                // top: 0;
+                // width: 100%;
             .hd-menu {
                 .item.button {
                     width: 100%;
